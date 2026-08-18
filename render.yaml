@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: xerox-centre
+    runtime: node
+    plan: free
+    buildCommand: echo "No build step required"
+    startCommand: node server.js
+    healthCheckPath: /
+    autoDeploy: true
